@@ -93,9 +93,9 @@ h1, h2, h3, h4, h5, h6 {
   width: 44px;
   height: 44px;
   border-radius: 50px;
-  color: #cda45e;
+  color: #c5c00c;
   transition: all 0.4s;
-  border: 2px solid #cda45e;
+  border: 2px solid #c5c00c;
 }
 
 .back-to-top i:hover {
@@ -172,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  top: 40px;
+  top: 0px;
 }
 
 #header.header-scrolled {
@@ -198,7 +198,7 @@ background: rgba(255, 69, 0, 0.6);
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 80px;
 }
 
 /*--------------------------------------------------------------
@@ -482,10 +482,11 @@ background: rgba(255, 69, 0, 0.6);
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+/*   background: url("../img/hero-bg.jpg") top center; */
+  background: url("../img/curumim/pipocas_salgadinhos_bg.jpeg") top center;
   background-size: cover;
   position: relative;
-  padding: 0;
+  padding: 100px;
 }
 
 #hero:before {
@@ -782,7 +783,8 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: url("../img/about-bg.jpg") center center;
+/*   background: url("../img/about-bg.jpg") center center; */
+  background: url("../img/curumim/pipocas_salgadinhos_bg.jpeg") center center;
   background-size: cover;
   position: relative;
   padding: 80px 0;
@@ -1017,17 +1019,30 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Specials
+# Produtos
 --------------------------------------------------------------*/
-.specials {
-  overflow: hidden;
+.produtos {
+	background: url("../img/curumim/todos_produtos.jpg") center center;
+  background-size: cover;
+  position: relative;
+  padding: 80px 0;
 }
 
-.specials .nav-tabs {
+.produtos:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.produtos .nav-tabs {
   border: 0;
 }
 
-.specials .nav-link {
+.produtos .nav-link {
   border: 0;
   padding: 12px 15px;
   transition: 0.3s;
@@ -1038,11 +1053,11 @@ section {
   font-size: 15px;
 }
 
-.specials .nav-link:hover {
+.produtos .nav-link:hover {
   color: #cda45e;
 }
 
-.specials .nav-link.active {
+.produtos .nav-link.active {
 /*   color: #1a1814; */
 /*   background: #cda45e; */
   color: #c5c00c;
@@ -1050,32 +1065,32 @@ section {
   border-color: #cda45e;
 }
 
-.specials .nav-link:hover {
+.produtos .nav-link:hover {
   border-color: #cda45e;
 }
 
-.specials .tab-pane.active {
+.produtos .tab-pane.active {
   -webkit-animation: fadeIn 0.5s ease-out;
   animation: fadeIn 0.5s ease-out;
 }
 
-.specials .details h3 {
+.produtos .details h3 {
   font-size: 26px;
   font-weight: 600;
   margin-bottom: 20px;
   color: #fff;
 }
 
-.specials .details p {
-  color: #aaaaaa;
+.produtos .details p {
+  color: #ffffff;
 }
 
-.specials .details p:last-child {
+.produtos .details p:last-child {
   margin-bottom: 0;
 }
 
 @media (max-width: 992px) {
-  .specials .nav-link {
+  .produtos .nav-link {
     border: 0;
     padding: 15px;
   }
@@ -1793,9 +1808,37 @@ section {
   padding-top: 30px;
 }
 
+#footer .counter {
+	text-align: right;
+	padding-right: 90px;
+}
+
 #footer .credits {
   padding-top: 10px;
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+.encontreVendedor {
+  background: url("../img/curumim/pipocas_salgadinhos_bg.jpeg") center center;
+  background-size: cover;
+  position: relative;
+  padding: 100px 100px;
+}
+
+.encontreVendedor:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+
+#encontreVendedor .dadosVendedor {
+	padding-bottom: 10px;
+
 }
